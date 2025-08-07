@@ -2,7 +2,10 @@
   "name": "@crmscore-services/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "crmscore": "nx serve crmscore --skip-nx-cache",
+    "mock-app": "nx serve mock-app --skip-nx-cache"
+  },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^11.0.0",

@@ -1,10 +1,9 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { CrmscoreModule } from './crmscore/crmscore.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [CrmscoreModule],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}

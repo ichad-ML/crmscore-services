@@ -36,7 +36,13 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/crmscore-e2e/**/*"]
+      "exclude": [
+        "apps/crmscore-e2e/**/*",
+        "apps/mock-app-e2e/**/*"
+      ]
     }
-  ]
+  ],
+  "tui": {
+    "enabled": false
+  }
 }

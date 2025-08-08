@@ -37,8 +37,7 @@
         "targetName": "test"
       },
       "exclude": [
-        "apps/crmscore-e2e/**/*",
-        "apps/mock-app-e2e/**/*"
+        "apps/crmscore-e2e/**/*"
       ]
     }
   ],

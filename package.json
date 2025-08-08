@@ -3,15 +3,16 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "crmscore": "nx serve crmscore --skip-nx-cache",
-    "mock-app": "nx serve mock-app --skip-nx-cache"
+    "crm-score": "nx serve crmscore --skip-nx-cache"
   },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^11.0.0",
+    "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.0.0",
     "@nestjs/platform-express": "^11.0.0",
     "axios": "^1.6.0",
+    "mysql2": "^3.14.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0"
   },

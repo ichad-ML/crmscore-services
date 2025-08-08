@@ -1,9 +1,18 @@
 import { Module } from '@nestjs/common';
 import { CrmscoreModule } from './crmscore/crmscore.module';
+import { DatabaseService } from './db/db.service';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [CrmscoreModule],
+  imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath: '.env',
+    }),
+    CrmscoreModule,
+  ],
   controllers: [],
-  providers: [],
+  providers: [DatabaseService],
+  exports: [DatabaseService],
 })
 export class AppModule {}

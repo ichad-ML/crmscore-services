@@ -1,7 +1,7 @@
 {
-  "name": "crmscore",
+  "name": "crm-score",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/crmscore/src",
+  "sourceRoot": "apps/crm-score/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -23,15 +23,15 @@
       "defaultConfiguration": "development",
       "dependsOn": ["build"],
       "options": {
-        "buildTarget": "crmscore:build",
+        "buildTarget": "crm-score:build",
         "runBuildTargetDependencies": false
       },
       "configurations": {
         "development": {
-          "buildTarget": "crmscore:build:development"
+          "buildTarget": "crm-score:build:development"
         },
         "production": {
-          "buildTarget": "crmscore:build:production"
+          "buildTarget": "crm-score:build:production"
         }
       }
     },

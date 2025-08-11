@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
-import { CrmscoreModule } from './crmscore/crmscore.module';
-import { DatabaseService } from './db/db.service';
+import { CrmScoreModule } from './crm-score/crm-score.module';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
@@ -9,10 +8,10 @@ import { ConfigModule } from '@nestjs/config';
       isGlobal: true,
       envFilePath: '.env',
     }),
-    CrmscoreModule,
+    CrmScoreModule,
   ],
   controllers: [],
-  providers: [DatabaseService],
-  exports: [DatabaseService],
+  providers: [],
+  exports: [],
 })
 export class AppModule {}

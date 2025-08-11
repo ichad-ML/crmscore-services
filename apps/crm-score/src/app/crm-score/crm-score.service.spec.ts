@@ -1,15 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { CrmscoreService } from './crmscore.service';
+import { CrmScoreService } from './crm-score.service';
 
-describe('CrmscoreService', () => {
-  let service: CrmscoreService;
+describe('CrmScoreService', () => {
+  let service: CrmScoreService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [CrmscoreService],
+      providers: [CrmScoreService],
     }).compile();
 
-    service = module.get<CrmscoreService>(CrmscoreService);
+    service = module.get<CrmScoreService>(CrmScoreService);
   });
 
   it('should be defined', () => {

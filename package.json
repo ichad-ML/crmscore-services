@@ -1,9 +1,9 @@
 {
-  "name": "@crmscore-services/source",
+  "name": "@crm-score-services/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "crm-score": "nx serve crmscore --skip-nx-cache"
+    "crm-score": "nx serve crm-score --skip-nx-cache"
   },
   "private": true,
   "dependencies": {

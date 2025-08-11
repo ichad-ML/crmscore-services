@@ -15,9 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@crmscore-services/api-lib": ["libs/api-lib/src/index.ts"],
-      "@crmscore-services/common": ["libs/common/src/index.ts"],
-      "@crmscore-services/common/*": ["libs/common/src/lib/*"],
+      "@crm-score-services/api-lib": ["libs/api-lib/src/index.ts"],
+      "@crm-score-services/common": ["libs/common/src/index.ts"],
+      "@crm-score-services/common/*": ["libs/common/src/lib/*"],
     }
   },
   "exclude": ["node_modules", "tmp"]

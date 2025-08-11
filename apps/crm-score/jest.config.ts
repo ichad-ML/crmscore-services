@@ -1,10 +1,10 @@
 export default {
-  displayName: 'crmscore',
+  displayName: 'crm-score',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {
     '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/apps/crmscore',
+  coverageDirectory: '../../coverage/apps/crm-score',
 };

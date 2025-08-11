@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { DatabaseService } from '../db/db.service';
 
 @Injectable()
-export class CrmscoreService {
+export class CrmScoreService {
   constructor(private readonly databaseService: DatabaseService) {}
 
   async getCustomer(): Promise<any> {

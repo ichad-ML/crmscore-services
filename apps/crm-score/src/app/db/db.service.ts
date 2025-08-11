@@ -36,7 +36,7 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
   }
 
   async callProcedure<T = any>(
-    procedureName: string,
+    storedProc: string,
     params: any[] = []
   ): Promise<T[]> {
     if (!this.connection) {
@@ -45,7 +45,7 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
 
     const placeholders = params.map(() => '?').join(',');
     const [rows] = await this.connection.query(
-      `CALL ${procedureName}(${placeholders})`,
+      `CALL ${storedProc}(${placeholders})`,
       params
     );
 
